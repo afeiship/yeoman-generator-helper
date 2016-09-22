@@ -1,0 +1,12 @@
+{
+  "name": "yeoman-generator-helper",
+  "version": "0.0.0",
+  "description": "Yeoman generator helper.",
+  "homepage": "https://github.com/afeiship/yeoman-generator-helper",
+  "main":"index.js",
+  "author": {
+    "name": "afei",
+    "email": "1290657123@qq.com"
+  },
+  "license": "MIT"
+}

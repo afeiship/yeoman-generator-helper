@@ -1,5 +1,5 @@
+var path = require('path');
 require('next-js-core2')(require);
-
 
 module.exports = nx.declare({
   statics: {

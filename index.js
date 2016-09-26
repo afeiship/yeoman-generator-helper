@@ -8,14 +8,9 @@ module.exports = nx.declare({
     },
     rewrite_props: function(inProps) {
       var props = this.props;
-      nx.each(inProps, function(prop, key) {
-        inProps[this.camelcase(key)] = this.camelcase(prop);
+      nx.each(inProps, function(key, prop) {
+        inProps[nx.camelCase(key)] = nx.camelCase(prop);
       }, this);
-    },
-    camelcase: function(inString) {
-      return inString.replace(/[_-]\D/g, function(match) {
-        return match.charAt(1).toUpperCase();
-      });
     }
   }
 });

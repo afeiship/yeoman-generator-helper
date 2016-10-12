@@ -3,7 +3,7 @@ var nx = require('next-js-core2');
 
 module.exports = nx.declare({
   statics: {
-    discoverRoot: function(arguments) {
+    discoverRoot: function() {
       return path.basename(process.cwd());
     },
     rewriteProps: function(inProps) {

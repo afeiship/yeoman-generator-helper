@@ -11,7 +11,7 @@ module.exports = nx.declare({
         //camelCase
         inProps[nx.camelCase(key)] = nx.camelCase(prop);
         //CamelCase
-        inProps['_'+nx.camelCase(key)] = nx.camelCase('_'+prop);
+        inProps[nx.camelCase('_'+key)] = nx.camelCase('_'+prop);
       }, this);
     }
   }

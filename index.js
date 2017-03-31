@@ -7,9 +7,12 @@ module.exports = nx.declare({
       return path.basename(process.cwd());
     },
     rewriteProps: function(inProps) {
-      var props = this.props;
       nx.each(inProps, function(key, prop) {
+        //camelCase
         inProps[nx.camelCase(key)] = nx.camelCase(prop);
+
+        //CamelCase
+        inProps['_'+nx.camelCase(key)] = nx.camelCase(prop);
       }, this);
     }
   }

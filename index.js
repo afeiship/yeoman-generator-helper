@@ -18,7 +18,7 @@ module.exports = nx.declare({
     rename: function(inSelf,inSrc,inTarget){
       inSelf.registerTransformStream(
         rename((path) => {
-            path.basename.replace(inSrc, inTarget);
+            path.basename = path.basename.replace(inSrc, inTarget);
             return path;
         })
       );

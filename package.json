@@ -10,6 +10,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "gulp-rename": "^1.2.2",
     "next-js-core2": "afeiship/next-js-core2"
   }
 }

@@ -1,5 +1,6 @@
 var path = require('path');
 var nx = require('next-js-core2');
+var rename = require("gulp-rename");
 
 module.exports = nx.declare({
   statics: {
@@ -13,6 +14,14 @@ module.exports = nx.declare({
         //CamelCase
         inProps[nx.camelCase('_'+key)] = nx.camelCase('_'+prop);
       }, this);
+    },
+    rename: function(inSelf,inSrc,inTarget){
+      inSelf.registerTransformStream(
+        rename((path) => {
+            path.basename.replace(inSrc, inTarget);
+            return path;
+        })
+      );
     }
   }
 });

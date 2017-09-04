@@ -1,6 +1,7 @@
 var path = require('path');
 var nx = require('next-js-core2');
 var rename = require("gulp-rename");
+var _ = require('next-camelize');
 
 module.exports = nx.declare({
   statics: {
@@ -10,9 +11,10 @@ module.exports = nx.declare({
     rewriteProps: function(inProps) {
       nx.each(inProps, function(key, prop) {
         //camelCase
-        inProps[nx.camelCase(key)] = nx.camelCase(prop);
+        inProps[nx.camelize(key)] = nx.camelize(prop);
         //CamelCase
-        inProps[nx.camelCase('_'+key)] = nx.camelCase('_'+prop);
+        inProps[nx.camelize('_'+key)] = nx.camelize('_'+prop);
+
       }, this);
     },
     rename: function(inSelf,inSrc,inTarget){

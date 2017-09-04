@@ -1,2 +1,2 @@
-#yeoman-generator-helper
+# yeoman-generator-helper
 Yeoman generator helper.

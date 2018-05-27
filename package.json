@@ -12,6 +12,7 @@
   "dependencies": {
     "gulp-rename": "^1.2.2",
     "next-camelize": "github:afeiship/next-camelize",
-    "next-js-core2": "afeiship/next-js-core2"
+    "next-js-core2": "afeiship/next-js-core2",
+    "next-underscored": "github:afeiship/next-underscored"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "yeoman-generator-helper",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Yeoman generator helper.",
   "homepage": "https://github.com/afeiship/yeoman-generator-helper",
   "main": "index.js",
@@ -14,5 +14,8 @@
     "next-camelize": "github:afeiship/next-camelize",
     "next-js-core2": "afeiship/next-js-core2",
     "next-underscored": "github:afeiship/next-underscored"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
   }
 }

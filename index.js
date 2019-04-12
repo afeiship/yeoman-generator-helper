@@ -17,7 +17,7 @@ module.exports = nx.declare({
       nx.each(
         inProps,
         function(key, prop) {
-          if (options.exclude.indexOf(key) > -1) {
+          if (options.exclude.indexOf(key) === -1) {
             //camelCase
             inProps[nx.camelize(key)] = nx.camelize(prop);
             //CamelCase

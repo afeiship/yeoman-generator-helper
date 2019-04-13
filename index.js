@@ -1,9 +1,9 @@
 var path = require('path');
 var nx = require('next-js-core2');
 var rename = require('gulp-rename');
-var DEFAULT_OPTIONS = {
-  exclude: ['description']
-};
+var DEFAULT_OPTIONS = { exclude: ['description'] };
+
+// import packages:
 require('next-camelize');
 require('next-underscored');
 

@@ -4,6 +4,7 @@ var rename = require('gulp-rename');
 var DEFAULT_OPTIONS = { exclude: ['description'] };
 
 // import packages:
+require('next-classify');
 require('next-camelize');
 require('next-underscored');
 
@@ -21,7 +22,7 @@ module.exports = nx.declare({
             //camelCase
             inProps[nx.camelize(key)] = nx.camelize(prop);
             //CamelCase
-            inProps[nx.camelize('_' + key)] = nx.camelize('_' + prop);
+            inProps[nx.classify(key)] = nx.classify(prop);
             //UNDERSCORED_CASE
             inProps[nx.underscored(key).toUpperCase()] = nx.underscored(prop).toUpperCase();
           }

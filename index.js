@@ -1,12 +1,12 @@
 var path = require('path');
-var nx = require('next-js-core2');
+var nx = require('@feizheng/next-js-core2');
 var rename = require('gulp-rename');
 var DEFAULT_OPTIONS = { exclude: ['description'] };
 
 // import packages:
-require('next-classify');
-require('next-camelize');
-require('next-underscored');
+require('@feizheng/next-classify');
+require('@feizheng/next-camelize');
+require('@feizheng/next-underscored');
 
 module.exports = nx.declare({
   statics: {

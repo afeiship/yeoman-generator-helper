@@ -10,11 +10,11 @@
   },
   "license": "MIT",
   "dependencies": {
-    "gulp-rename": "1.2.2",
-    "next-camelize": "github:afeiship/next-camelize",
-    "next-classify": "github:afeiship/next-classify",
-    "next-js-core2": "afeiship/next-js-core2",
-    "next-underscored": "github:afeiship/next-underscored"
+    "@feizheng/next-camelize": "^1.0.0",
+    "@feizheng/next-classify": "^1.0.0",
+    "@feizheng/next-js-core2": "^2.0.2",
+    "@feizheng/next-underscored": "^1.0.0",
+    "gulp-rename": "1.2.2"
   },
   "devDependencies": {
     "prettier": "^1.16.4"

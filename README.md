@@ -1,7 +1,12 @@
 # yeoman-generator-helper
 > Yeoman generator helper.
 
-## gulp-rename:
+## installation
+```shell
+npm i @feizheng/yeoman-generator-helper
+```
+
+## gulp-rename
 - https://github.com/yeoman/yo/issues/577
 
 ~~~

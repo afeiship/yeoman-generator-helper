@@ -36,15 +36,13 @@ module.exports = nx.declare({
         this
       );
     },
+    renameBy: function(inSelf, inCallback) {
+      inSelf.registerTransformStream(rename(inCallback));
+    },
     rename: function(inSelf, inSrc, inTarget) {
-      var isFunction = typeof inSrc === 'function';
       inSelf.registerTransformStream(
         rename((path) => {
-          if (isFunction) {
-            return inSrc(path);
-          } else {
-            path.basename = path.basename.replace(inSrc, inTarget);
-          }
+          path.basename = path.basename.replace(inSrc, inTarget);
           return path;
         })
       );

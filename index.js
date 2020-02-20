@@ -13,6 +13,12 @@ module.exports = nx.declare({
     discoverRoot: function() {
       return path.basename(process.cwd());
     },
+    shortName: function(inName) {
+      var name = inName || this.discoverRoot();
+      var paths = name.split('-');
+      paths.shift();
+      return paths.join('-');
+    },
     rewriteProps: function(inProps, inOptions) {
       var options = nx.mix(DEFAULT_OPTIONS, inOptions);
       nx.each(

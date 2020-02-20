@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/yeoman-generator-helper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Yeoman generator helper.",
   "homepage": "https://github.com/afeiship/yeoman-generator-helper",
   "main": "index.js",
@@ -10,14 +10,17 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@feizheng/next-camelize": "^1.0.0",
+    "@feizheng/next-camelize": "^1.0.2",
     "@feizheng/next-classify": "^1.0.0",
-    "@feizheng/next-js-core2": "^2.0.2",
-    "@feizheng/next-underscored": "^1.0.0",
-    "gulp-rename": "1.2.2"
+    "@feizheng/next-js-core2": "^2.4.1",
+    "@feizheng/next-underscored": "^1.0.1",
+    "gulp-rename": "2.0.0"
   },
   "devDependencies": {
-    "@feizheng/rake-git": "^1.2.0",
-    "prettier": "^1.16.4"
+    "@feizheng/rake-git": "^1.2.1",
+    "prettier": "^1.19.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }

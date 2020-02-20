@@ -37,11 +37,11 @@ module.exports = nx.declare({
       );
     },
     rename: function(inSelf, inSrc, inTarget) {
-      var isFunction = typeof inTarget === 'function';
+      var isFunction = typeof inSrc === 'function';
       inSelf.registerTransformStream(
         rename((path) => {
           if (isFunction) {
-            return inTarget(path);
+            return inSrc(path);
           } else {
             path.basename = path.basename.replace(inSrc, inTarget);
           }

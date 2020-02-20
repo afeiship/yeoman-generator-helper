@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/yeoman-generator-helper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Yeoman generator helper.",
   "homepage": "https://github.com/afeiship/yeoman-generator-helper",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "@feizheng/next-classify": "^1.0.0",
     "@feizheng/next-js-core2": "^2.4.1",
     "@feizheng/next-underscored": "^1.0.1",
-    "gulp-rename": "2.0.0"
+    "gulp-rename": "1.2.2"
   },
   "devDependencies": {
     "@feizheng/rake-git": "^1.2.1",

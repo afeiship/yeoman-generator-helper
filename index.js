@@ -19,6 +19,9 @@ module.exports = nx.declare({
       paths.shift();
       return paths.join('-');
     },
+    underToDot: function(inContext) {
+      this.rename(inContext, /_/, '.');
+    },
     rewriteProps: function(inProps, inOptions) {
       var options = nx.mix(DEFAULT_OPTIONS, inOptions);
       nx.each(

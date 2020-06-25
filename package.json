@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/yeoman-generator-helper",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Yeoman generator helper.",
   "homepage": "https://github.com/afeiship/yeoman-generator-helper",
   "main": "index.js",

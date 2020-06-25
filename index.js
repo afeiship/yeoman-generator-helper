@@ -1,7 +1,7 @@
 var path = require('path');
 var nx = require('@feizheng/next-js-core2');
 var rename = require('gulp-rename');
-var DEFAULT_OPTIONS = { exclude: ['description', 'registry'] };
+var DEFAULT_OPTIONS = { exclude: ['description', 'registry', 'homepage'] };
 
 // import packages:
 require('@feizheng/next-classify');

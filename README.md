@@ -6,6 +6,17 @@
 npm i @feizheng/yeoman-generator-helper
 ```
 
+## apis
+| api          | params                 | description |
+| ------------ | ---------------------- | ----------- |
+| discoverRoot | -                      | -           |
+| shortName    | (name)                 | -           |
+| extendProps  | (context)              | -           |
+| underToDot   | (context)              | -           |
+| rewriteProps | (props,{ exclude:[] }) | -           |
+| renameBy     | (context, callback)    | -           |
+| rename       | (context, src,dest)    | -           |
+
 ## gulp-rename
 - https://github.com/yeoman/yo/issues/577
 - https://github.com/yeoman/yeoman/issues/1676

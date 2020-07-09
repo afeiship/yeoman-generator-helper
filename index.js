@@ -19,6 +19,12 @@ module.exports = nx.declare({
       paths.shift();
       return paths.join('-');
     },
+    extendProps: function (inContext) {
+      var date = new Date();
+      nx.mix(inContext, {
+        year: date.getFullYear()
+      });
+    },
     underToDot: function (inContext) {
       this.rename(inContext, /_/, '.');
     },
@@ -41,11 +47,11 @@ module.exports = nx.declare({
         this
       );
     },
-    renameBy: function (inSelf, inCallback) {
-      inSelf.registerTransformStream(rename(inCallback));
+    renameBy: function (inContext, inCallback) {
+      inContext.registerTransformStream(rename(inCallback));
     },
-    rename: function (inSelf, inSrc, inTarget) {
-      inSelf.registerTransformStream(
+    rename: function (inContext, inSrc, inTarget) {
+      inContext.registerTransformStream(
         rename((path) => {
           path.basename = path.basename.replace(inSrc, inTarget);
           return path;

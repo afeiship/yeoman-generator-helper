@@ -3,7 +3,8 @@
 
 <style>
     table{
-        width: 100%;
+      width: 100%;
+      display: table;
     }
 </style>
 

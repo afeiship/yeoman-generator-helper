@@ -1,6 +1,12 @@
 # yeoman-generator-helper
 > Yeoman generator helper.
 
+<style>
+    table{
+        width: 100%;
+    }
+</style>
+
 ## installation
 ```shell
 npm i @feizheng/yeoman-generator-helper

@@ -21,7 +21,7 @@ module.exports = nx.declare({
     },
     extendProps: function (inContext) {
       var date = new Date();
-      nx.mix(inContext, {
+      nx.mix(inContext.props, {
         year: date.getFullYear()
       });
     },

@@ -3,7 +3,7 @@
 
 ## installation
 ```shell
-npm i @feizheng/yeoman-generator-helper
+npm i @jswork/yeoman-generator-helper
 ```
 
 ## apis

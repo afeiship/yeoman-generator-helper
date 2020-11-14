@@ -1,6 +1,6 @@
 {
   "name": "@jswork/yeoman-generator-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Yeoman generator helper.",
   "homepage": "https://github.com/afeiship/yeoman-generator-helper",
   "main": "index.js",

@@ -10,17 +10,19 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@feizheng/next-camelize": "^1.0.2",
-    "@feizheng/next-classify": "^1.0.0",
-    "@feizheng/next-js-core2": "^2.4.3",
-    "@feizheng/next-underscored": "^1.0.1",
-    "gulp-rename": "^2.0.0"
+    "@jswork/next": "^1.0.0",
+    "gulp-rename": "^2.0.0",
+    "lodash": "^4.17.20"
   },
   "devDependencies": {
     "@feizheng/rake-git": "^1.2.1",
-    "prettier": "^2.0.2"
+    "prettier": "^2.0.2",
+    "release-it": "^14.2.1"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "release": "release-it"
   }
 }

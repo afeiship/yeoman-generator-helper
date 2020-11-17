@@ -11,11 +11,11 @@
   "license": "MIT",
   "dependencies": {
     "@jswork/next": "^1.0.0",
-    "gulp-rename": "^2.0.0",
-    "lodash": "^4.17.20"
+    "@jswork/next-classify": "^1.0.0",
+    "@jswork/next-underscored": "^1.0.0",
+    "gulp-rename": "^2.0.0"
   },
   "devDependencies": {
-    "@feizheng/rake-git": "^1.2.1",
     "prettier": "^2.0.2",
     "release-it": "^14.2.1"
   },

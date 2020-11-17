@@ -2,8 +2,10 @@ var path = require('path');
 var nx = require('@jswork/next');
 var rename = require('gulp-rename');
 var DEFAULT_OPTIONS = { exclude: ['description', 'registry', 'homepage'] };
-var _ = require('lodash');
 
+require('@jswork/next-underscored');
+require('@jswork/next-classify');
+require('@jswork/next-camelize');
 
 module.exports = nx.declare({
   statics: {
@@ -32,11 +34,11 @@ module.exports = nx.declare({
         function (key, prop) {
           if (options.exclude.indexOf(key) === -1) {
             //camelCase
-            inProps[_.camelCase(key)] = _.camelCase(prop);
+            inProps[nx.camelize(key)] = nx.camelize(prop);
             //CamelCase
-            inProps[_.classify(key)] = _.classify(prop);
+            inProps[nx.classify(key)] = nx.classify(prop);
             //UNDERSCORED_CASE
-            inProps[_.underscored(key).toUpperCase()] = _.underscored(prop).toUpperCase();
+            inProps[nx.underscored(key).toUpperCase()] = nx.underscored(prop).toUpperCase();
             // revert like `prefix- ` prop
             inProps[key] = prop;
           }

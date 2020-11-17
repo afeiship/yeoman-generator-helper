@@ -32,7 +32,7 @@ module.exports = nx.declare({
         function (key, prop) {
           if (options.exclude.indexOf(key) === -1) {
             //camelCase
-            inProps[_.camelize(key)] = _.camelize(prop);
+            inProps[_.camelCase(key)] = _.camelCase(prop);
             //CamelCase
             inProps[_.classify(key)] = _.classify(prop);
             //UNDERSCORED_CASE

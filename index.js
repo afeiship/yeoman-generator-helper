@@ -28,7 +28,7 @@ module.exports = nx.declare({
       this.rename(inContext, /_/, '.');
     },
     rewriteProps: function (inProps, inOptions) {
-      var options = nx.mix(DEFAULT_OPTIONS, inOptions);
+      var options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
       nx.each(
         inProps,
         function (key, prop) {

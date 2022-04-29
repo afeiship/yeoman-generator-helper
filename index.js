@@ -2,6 +2,7 @@ var path = require('path');
 var nx = require('@jswork/next');
 var rename = require('gulp-rename');
 var DEFAULT_OPTIONS = { exclude: ['description', 'registry', 'homepage'] };
+var pluralize = require('pluralize');
 
 require('@jswork/next-underscored');
 require('@jswork/next-classify');

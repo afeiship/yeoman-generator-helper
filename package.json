@@ -1,6 +1,6 @@
 {
   "name": "@jswork/yeoman-generator-helper",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Yeoman generator helper.",
   "homepage": "https://github.com/afeiship/yeoman-generator-helper",
   "main": "index.js",
@@ -14,7 +14,8 @@
     "@jswork/next-camelize": "^1.0.0",
     "@jswork/next-classify": "^1.0.0",
     "@jswork/next-underscored": "^1.0.0",
-    "gulp-rename": "^2.0.0"
+    "gulp-rename": "^2.0.0",
+    "pluralize": "^8.0.0"
   },
   "devDependencies": {
     "prettier": "^2.0.2",

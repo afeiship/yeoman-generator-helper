@@ -56,6 +56,12 @@ module.exports = nx.declare({
           return path;
         })
       );
+    },
+    ctx: {
+      camelize: nx.camelize,
+      classify: nx.classify,
+      underscored: nx.underscored,
+      pluralize: pluralize,
     }
   }
 });

@@ -51,6 +51,7 @@ module.exports = nx.declare({
       inContext.registerTransformStream(rename(inCallback));
     },
     rename: function (inContext, inSrc, inTarget) {
+      console.warn('RENAME will be deprecated!');
       inContext.registerTransformStream(
         rename((path) => {
           path.basename = path.basename.replace(inSrc, inTarget);

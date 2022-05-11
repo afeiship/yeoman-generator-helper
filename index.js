@@ -3,6 +3,7 @@ var nx = require('@jswork/next');
 var rename = require('gulp-rename');
 var DEFAULT_OPTIONS = { exclude: ['description', 'registry', 'homepage'] };
 var pluralize = require('pluralize');
+var ejs = require('ejs');
 
 require('@jswork/next-underscored');
 require('@jswork/next-classify');
@@ -13,6 +14,10 @@ module.exports = nx.declare({
     discoverRoot: function () {
       return path.basename(process.cwd());
     },
+    tmpl: function (inFilename, inData) {
+      var compiled = ejs.compile(fs.readFileSync(inFilename, 'utf8'));
+      return compiled(inData);
+    },
     shortName: function (inName) {
       var name = inName || this.discoverRoot();
       var paths = name.split('-');
@@ -22,7 +27,7 @@ module.exports = nx.declare({
     extendProps: function (inContext) {
       var date = new Date();
       nx.mix(inContext.props, {
-        year: date.getFullYear()
+        year: date.getFullYear(),
       });
     },
     underToDot: function (inContext) {
@@ -64,6 +69,6 @@ module.exports = nx.declare({
       classify: nx.classify,
       underscored: nx.underscored,
       pluralize: pluralize,
-    }
-  }
+    },
+  },
 });

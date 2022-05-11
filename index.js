@@ -4,6 +4,7 @@ var rename = require('gulp-rename');
 var DEFAULT_OPTIONS = { exclude: ['description', 'registry', 'homepage'] };
 var pluralize = require('pluralize');
 var ejs = require('ejs');
+var fs = require('fs');
 
 require('@jswork/next-underscored');
 require('@jswork/next-classify');

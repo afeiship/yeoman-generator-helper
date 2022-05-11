@@ -35,6 +35,7 @@ module.exports = nx.declare({
       this.rename(inContext, /_/, '.');
     },
     rewriteProps: function (inProps, inOptions) {
+      console.warn('This method will be deprecated, please use `<%- ctx.camelize(hook_name) %>` instead.');
       var options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
       nx.each(
         inProps,
